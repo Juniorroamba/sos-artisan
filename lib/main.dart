@@ -6,7 +6,11 @@ import 'store.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await store.charger();
+  try {
+    await store.charger();
+  } catch (e) {
+    debugPrint('Chargement des données locales impossible : $e');
+  }
   runApp(const SosArtisanApp());
 }
 
