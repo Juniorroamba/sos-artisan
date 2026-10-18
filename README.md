@@ -2,10 +2,24 @@
 
 Un artisan qualifié, à portée de main. Application Flutter (Android + Web) pour trouver et contacter des artisans au Burkina Faso.
 
-## Utiliser l'application
+## Installer sur Android
 
-- **Android** : téléchargez `sos-artisan.apk` depuis la [dernière version](https://github.com/Juniorroamba/sos-artisan/releases/latest), puis ouvrez le fichier sur votre téléphone (autorisez « Installer des applications inconnues » si demandé).
-- **Web** (tout appareil, sans installation) : https://juniorroamba.github.io/sos-artisan/
+<img src="docs/qr-installation.png" width="220" alt="QR code d'installation">
+
+1. Scannez le QR code avec l'appareil photo du téléphone (ou touchez le lien ci-dessous depuis le téléphone).
+2. Ouvrez le fichier téléchargé, autorisez « Installer des applications inconnues » si Android le demande, puis touchez **Installer**.
+
+| Téléphone | Fichier |
+|---|---|
+| La plupart des téléphones (depuis ~2017) | [sos-artisan-arm64.apk](https://github.com/Juniorroamba/sos-artisan/releases/latest/download/sos-artisan-arm64.apk) (22 Mo) |
+| Téléphones anciens / premier prix | [sos-artisan-ancien-telephone.apk](https://github.com/Juniorroamba/sos-artisan/releases/latest/download/sos-artisan-ancien-telephone.apk) (19 Mo) |
+| Si vous ne savez pas | [sos-artisan.apk](https://github.com/Juniorroamba/sos-artisan/releases/latest/download/sos-artisan.apk) (55 Mo, fonctionne partout) |
+
+Android 7.0 minimum. Si l'installation affiche « Application non installée », prenez la version « Si vous ne savez pas ».
+
+## Version web
+
+Sans installation, sur tout appareil : https://juniorroamba.github.io/sos-artisan/
 
 ## Fonctionnalités
 
