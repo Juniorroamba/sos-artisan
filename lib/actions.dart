@@ -79,11 +79,13 @@ Future<Position?> obtenirPosition(BuildContext context) async {
   try {
     return await Geolocator.getCurrentPosition(
       locationSettings: const LocationSettings(
-        accuracy: LocationAccuracy.high,
-        timeLimit: Duration(seconds: 20),
+        accuracy: LocationAccuracy.medium,
+        timeLimit: Duration(seconds: 15),
       ),
     );
   } catch (_) {
+    final derniere = await Geolocator.getLastKnownPosition();
+    if (derniere != null) return derniere;
     info('Position introuvable. Réessayez à l’extérieur.');
     return null;
   }
